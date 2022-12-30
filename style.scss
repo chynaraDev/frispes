@@ -1,0 +1,267 @@
+@import "mixin";
+@import "global";
+@import "variables";
+
+#navbar{
+  padding: 20px 0;
+  .navbar{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    h1{
+      font-weight: 700;
+      font-size: 24px;
+      color: #10375C;
+    }
+    &--btn {
+      button {
+        font-weight: 700;
+        font-size: 16px;
+        color: #FF5722;
+        background: #FFFFff;
+        box-shadow: 0 4px 16px rgba(255, 87, 34, 0.32);
+        padding: 12px 24px;
+        &:hover{
+          transform: scale(1.1);
+          background: #FF5722;
+          color: #FFFFff;
+        }
+      }
+    }
+    &--nav{
+      a{
+        font-weight: 700;
+        font-size: 16px;
+        color: #222831;
+        padding: 0 20px;
+      }
+    }
+  }
+}
+
+#space{
+  padding: 40px 0;
+  .space{
+    &--content{
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      p{
+        font-weight: 500;
+        font-size: 20px;
+        line-height: 30px;
+        width: 382px;
+        color: #6A6A6A;
+      }
+      &__tittle{
+        h1{
+          font-weight: 700;
+          font-size: 52px;
+          line-height: 67px;
+          color: #10375C;
+          width: 667px;
+          span{
+            color: #DD2C00;
+          }
+        }
+        &--text{
+          display: flex;
+          align-items: center;
+          h4{
+            font-weight: 500;
+            font-size: 20px;
+            color: #222831;
+            padding-bottom: 10px;
+          }
+          &__line{
+            width: 73px;
+            height: 2px;
+            background: #222831;
+            margin-left: 15px;
+          }
+        }
+      }
+    }
+    &--img{
+      position: relative;
+      &__img{
+        position: absolute;
+        right: -189px;
+      }
+      &__block{
+        position: absolute;
+        top: 70px;
+        left: 50px;
+        width: 445px;
+        height: 459px;
+        background: #10375C;
+        h1{
+          font-weight: 700;
+          font-size: 34px;
+          color: #FFFFFF;
+          text-align: center;
+          padding: 42px 0 29px 0;
+        }
+        button{
+          font-weight: 700;
+          font-size: 18px;
+          color: #FFFFFF;
+          background: #FF5722;
+          width: 363px;
+          height: 53px;
+          margin-left: 40px;
+          margin-top: 29px;
+          &:hover{
+            transform: scale(1.1);
+            background: #FFFFFF;
+            color: #FF5722;
+            border: 2px solid #FF5722;
+          }
+        }
+        &--select{
+          padding: 8px 40px;
+          select{
+            background: #0D2C4A;
+            width: 365px;
+            height: 68px;
+            border: none;
+            outline: none;
+            font-weight: 500;
+            font-size: 16px;
+            color: #FFFFFF;
+            opacity: 0.35;
+            padding: 10px 10px;
+            }
+          }
+        }
+      }
+    }
+  }
+
+#our {
+  padding: 700px 0;
+
+  .our {
+    &--text {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      h1 {
+        font-weight: 700;
+        font-size: 40px;
+        color: #10375C;
+      }
+
+      p {
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 28px;
+        color: #9A9A9A;
+        width: 452px;
+      }
+
+      &__icon {
+        ion-icon{
+          color: orange;
+          font-size: 30px;
+          padding: 0 10px;
+        }
+      }
+    }
+    &--group{
+      display: flex;
+      align-items: center;
+      padding-top: 56px;
+      &__img{
+        position: relative;
+        &--img{
+          position: absolute;
+        }
+        &--block{
+          position: absolute;
+          top: 347px;
+          width: 72px;
+          height: 72px;
+          background: #FF5722;
+          @include center();
+          ion-icon{
+            color: #FFFFFF;
+            font-size: 30px;
+          }
+        }
+      }
+      &__private{
+        position: relative;
+        &--block{
+          position: absolute;
+          width: 350px;
+          height: 467px;
+          background: #10375C;
+          left: 400px;
+          h1{
+            font-weight: 400;
+            font-size: 32px;
+            color: #FFFFFF;
+            text-align: center;
+            padding: 144px 0 14px 0;
+          }
+          p{
+            font-weight: 500;
+            font-size: 18px;
+            line-height: 28px;
+            width: 253px;
+            text-align: center;
+            color: #FFFFFF;
+            padding-left: 41px;
+          }
+          &__square{
+            position: absolute;
+            width: 255px;
+            height: 72px;
+            background: #FF5722;
+            bottom:-1px;
+            &--text {
+              display: flex;
+              align-items: center;
+              justify-content: space-around;
+              padding-top: 20px;
+              h3 {
+                font-weight: 700;
+                font-size: 18px;
+                text-align: center;
+                color: #FFFFFF;
+              }
+
+              ion-icon {
+                font-size: 30px;
+                color: #FFFFFF;
+              }
+            }
+          }
+        }
+      }
+      &__image{
+        position: relative;
+        &--image{
+          position: absolute;
+          left: 800px;
+          top: 10px;
+          }
+        &--block{
+          position: absolute;
+          top: 347px;
+          width: 72px;
+          height: 72px;
+          background: #FF5722;
+          @include center();
+          left: 800px;
+          bottom: -20px;
+          ion-icon{
+            color: #FFFFFF;
+            font-size: 30px;
+          }
+        }
+      }
+    }
+  }
+}
