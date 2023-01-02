@@ -95,6 +95,23 @@ body {
   display: flex;
   align-items: center;
   justify-content: space-between;
+  animation: 2s navbar alternate;
+}
+@keyframes navbar {
+  0% {
+    transform: translateX(-500px);
+    opacity: 1;
+  }
+  50% {
+    transform: scale(1.1);
+    color: aqua;
+  }
+  75% {
+    color: fuchsia;
+  }
+  100% {
+    transform: translateX(0);
+  }
 }
 #navbar .navbar h1 {
   font-weight: 700;
@@ -832,7 +849,7 @@ body {
 #news .news--blocks__minimal--square {
   width: 350px;
   height: 116px;
-  background: #FFFFFF;
+  background: #F8F8F8;
 }
 #news .news--blocks__minimal--square h1 {
   font-weight: 400;
