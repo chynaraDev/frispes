@@ -4,6 +4,10 @@
 
 #navbar{
   padding: 20px 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background: #FFFFff;
   .navbar{
     display: flex;
     align-items: center;
@@ -11,7 +15,7 @@
     animation: 2s navbar alternate;
     @keyframes navbar {
       0% {
-        transform: translateX(-500px);
+        transform: translatey(-500px);
         opacity: 1;
       }
 
@@ -23,7 +27,7 @@
         color: fuchsia;
       }
       100%{
-        transform: translateX(0);
+        transform: translateY(0);
       }
 
     }

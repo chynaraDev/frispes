@@ -90,6 +90,10 @@ body {
 
 #navbar {
   padding: 20px 0;
+  position: sticky;
+  z-index: 100;
+  top: 0;
+  background: #FFFFff;
 }
 #navbar .navbar {
   display: flex;
@@ -99,7 +103,7 @@ body {
 }
 @keyframes navbar {
   0% {
-    transform: translateX(-500px);
+    transform: translatey(-500px);
     opacity: 1;
   }
   50% {
@@ -110,7 +114,7 @@ body {
     color: fuchsia;
   }
   100% {
-    transform: translateX(0);
+    transform: translateY(0);
   }
 }
 #navbar .navbar h1 {
