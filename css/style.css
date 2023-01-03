@@ -55,6 +55,7 @@ body {
   flex-direction: column;
   width: 445px;
   height: 393px;
+  margin: 0 15px;
   transition: 0.6s;
 }
 
